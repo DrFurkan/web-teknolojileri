@@ -15,7 +15,7 @@ Kendimi ve yaşadığım şehri tanıtan bir web sitesi geliştirmek
 ### Login Sayfası:
 - Kullanıcı adı ve şifre ile giriş için
 ### İletişim Sayfası:
-- İletişim bilgileri
+- Form elemanlarını içeren bir iletişim sayfası
 
 ## Planan Proje Süreci:
 - Sayfaların html dosyalarının yazılması ve gerekli dökümanın ve içeriğin toplanması.
