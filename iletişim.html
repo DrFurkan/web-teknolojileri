@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
     <nav class="navbar bg-dark navbar-expand-sm navbar-dark fixed-top">
 
         <div class="container">
@@ -55,11 +54,11 @@
                         <a href="özgeçmiş.html" class="nav-link active">
                             Özgeçmiş
                         </a>
+                    </li>
                     <li class="nav-item">
-                        <a href="loginn.php" class="nav-link active">
+                        <a href="login.html" class="nav-link active">
                             Giriş Yap
                         </a>
-                    </li>
                     </li>
                     <!-- weather widget start --><a target="_blank" href="https://bookeder.com/weather/diyarbakir-33376"><img src="https://w.bookcdn.com/weather/picture/25_33376_1_21_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=765&anc_id=42110"  alt="booked.net"/></a><!-- weather widget end -->
                 </ul>
@@ -76,6 +75,7 @@
 
 
 
+
     <main>
 
         <div class="container">
@@ -84,49 +84,75 @@
                 <div class="col-md-8">
 
                     <div class="card mb-4">
-                        <img src="görsel/sur.jpg" class="card-img-top img-thumbnail" alt="">
+                        <img src="görsel/eğililçe.jpg" class="card-img-top img-thumbnail" alt="">
                         <div class="card-body">
-                            <h4 class="card-title">HAKKIMDA</h4>
-                            <p class="card-text">
-                                Ben Muhammed Furkan Özgen. 16 kasım 1999 da Diyarbakırda doğdum. Küçüklükten beri
-                                bilgisayara, teknolojiye olan
-                                merakım beni bilgisayar mühendisliğine itti.
-                            </p>
-                            <p class="card-text">
-                                Teknoloji, tarih, uzay, biyoloji, yapay zeka alanlarına özel bir ilgim var. Genelde bu
-                                alanlarda kitap okumayı
-                                tercih ederim. Satranç oynamak, yüzmek, yürüyüş yapmak, araştırma yapmak (özellikle
-                                askeri teknoloji),
-                                bilgisayar oyunları oynamak (çoğunluk strateji), analiz yapmak ilgi alanlarım
-                                arasındadır.
-                            </p>
-                            <p class="card-text">
-                                Bilgisayar oyunlarına ayrıca değinmek istiyorum. çocukluğumun oyunu olan Age of Empires
-                                II ye değinmezsem olmaz :)
-                            </p>
-                            <img src="görsel/ageof.jpg" class="card-img-top img-thumbnail" alt="">
-                            <p class="card-text">
-                                Bİrçok bilgisayar oyunu arasında olan Age of Empires II nin kalbimde özel bir yeri
-                                vardır. Kurduğumuz stratejiler ile
-                                elimizdeki kaynakları en iyi şekilde kullanıp, en iyi taktiklerle düşman devletleri
-                                yenmek oyunun asıl amacı.
-                                Oyunun bana en büyük katkılarından biri; ufkumu açıp, bana farklı bir düşünce tarzı
-                                kazandırması olmuştur.
-                            </p>
+
+                            <form action="iletişim.php" method="POST" name="form" onsubmit="return validateForm();">
+                                <div class="form-group">
+
+
+                                    <label>isminiz</label>
+                                    <input type="text" class="form-control" name="isim">
+
+                                </div>
+                                <div class="form-group">
+
+
+                                    <label>Soyisminiz</label>
+                                    <input type="text" class="form-control" name="soyisim">
+
+                                </div>
+
+                                <div class="form-group">
+
+
+                                    <label>cinsiyet</label> <br><br>
+                                    <input type="radio" name="cinsiyet"> erkek
+                                    <input type="radio" name="cinsiyet"> kadın
+                                </div>
+
+                                <div class="form-group">
+                                    <label>E-Posta</label>,
+                                    <input type="email" class="form-control" name="email">
+
+                                </div>
+
+                                <div class="form-group">
+                                    Yaşınız:
+                                    <select>
+                                        <option>Seçiniz</option>
+                                        <option>10-18</option>
+                                        <option>18-24</option>
+                                        <option>24+</option>
+
+                                    </select>
+                                </div>
+
+                                <button type="submit" class="btn btn-success">Gönder</button>
+                                <button type="reset" class="btn btn-success">Bilgileri Temizle</button>
+                                <script>
+                                    function validateForm() {
+                                        var x = document.forms["form"]["isim"].value;
+                                        var y = document.forms["form"]["soyisim"].value;
+                                        var z = document.forms["form"]["email"].value;
+
+
+                                        if (x == "" || y == "" || z == "") {
+                                            alert("Lütfen Bilgileri Eksiksiz Doldurunuz");
+                                            return false;
+                                        }
+                                    }
+                                </script>
+
+                            </form>
+
+
 
 
                         </div>
 
 
-
-
-
                     </div>
-                    
-                </div>
-
-
-            </div>
 
 
 
@@ -138,9 +164,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

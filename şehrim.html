@@ -47,7 +47,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link active">
+                        <a href="iletişim.html" class="nav-link active">
                             İletişim
                         </a>
                     </li>
@@ -55,7 +55,13 @@
                         <a href="özgeçmiş.html" class="nav-link active">
                             Özgeçmiş
                         </a>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link active">
+                                Giriş Yap
+                            </a>
+                        </li>
                     </li>
+                    <!-- weather widget start --><a target="_blank" href="https://bookeder.com/weather/diyarbakir-33376"><img src="https://w.bookcdn.com/weather/picture/25_33376_1_21_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=765&anc_id=42110"  alt="booked.net"/></a><!-- weather widget end -->
                 </ul>
 
             </div>
@@ -80,6 +86,31 @@
 				<div class="col-md-8">
 
 					<div class="card mb-4">
+                        <div id="slider1" class="carousel slide my-5" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="#ongözlüköprü">  <img class="d-block w-100" src="görsel/ongözlü2.jpg"> </a> 
+                                </div>
+                                <div class="carousel-item">
+                                  <a href="#gaziköşkü"> <img class="d-block w-100" src="görsel/gaziköşkü3.jpg" alt=""> </a> 
+                                </div>
+                                <div class="carousel-item">
+                                <a href="#hasanpaşahanı">   <img class="d-block w-100" src="görsel/hasanpaşa-han2.jpg"  alt=""></a> 
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="#ulucami">   <img class="d-block w-100" src="görsel/ulucami2.jpg"  alt=""></a> 
+                                </div>
+
+
+                            </div>
+                            <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a href="#slider1" class="carousel-control-next" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+
 						<img src="görsel/sur.jpg" class="card-img-top img-thumbnail" alt="">
 						<div class="card-body">
 							<h4 class="card-title">Diyarbakır Hakkında</h4>
@@ -92,7 +123,7 @@
                             <img src="görsel/diyarbakirharita.png" class="card-img-top img-thumbnail" alt="">
                            
                             <h3 class="card-title">Gezilecek yerler</h3>
-                            <h4 class="card-title">1- Ulu Cami</h4>
+                            <h4 class="card-title" id="ulucami">1- Ulu Cami</h4>
                             <p class="card-text">
                                 Anadolu'nun en eski camisidir. 639 yılında Diyarbakır'a egemen olan müslüman Araplar tarafından
                                  şehrin merkezindeki en büyük mabedin (Martoma Kilisesi) camiye çevrilmesiyle oluşturulmuştur. Daha sonra 1091 yılında 
@@ -100,7 +131,7 @@
                                  eklentilerle bugünkü şeklini aldığını kitabelerinden öğrenmekteyiz. 
 
                             </p>
-                            <img src="ulucami.jpg" class="card-img-top img-thumbnail" alt="">
+                            <img src="görsel/ulucami.jpg" class="card-img-top img-thumbnail" alt="">
                             
                             <h4 class="card-title">2- Hz.Süleyman Camii</h4>
                             <p class="card-text">
@@ -111,7 +142,7 @@
                                   devam ettirmektedir.
                             </p>
                             <img src="görsel/hz.suleymancami.jpg" class="card-img-top img-thumbnail" alt="">
-                            <h4 class="card-title">3- Gazi Köşkü</h4>
+                            <h4 class="card-title" id="gaziköşkü" >3- Gazi Köşkü</h4>
                             <p class="card-title">
                                 Gazi Köşkü veya Atatürk Köşkü, Diyarbakır'da yer alan iki katlı tarihî bir köşktür. 15. yüzyıldan kalma yapı, Akkoyunlu eseri olarak bilinir.
                                 Önceleri Semanoğlu Köşkü olarak bilinen köşk, I. Dünya Savaşı esnasında 16. Kolordu Komutanı Mustafa Kemal Atatürk tarafından karargâh olarak
@@ -120,7 +151,7 @@
                             </p>
                             <img src="görsel/gaziköşkü.jpg" class="card-img-top img-thumbnail" alt="">
                             <img src="görsel/gaziköşkü2.jpg" class="card-img-top img-thumbnail" alt="">
-                            <h4 class="card-title">4- Hevsel Bahçeleri</h4>
+                            <h4 class="card-title" id="hevselbahceleri" >4- Hevsel Bahçeleri</h4>
                             <p class="card-title"> 
                                 Hevsel Bahçeleri, Dicle Nehri kıyısında, Diyarbakır Kalesi ile nehir vadisi arasında yer alan yaklaşık yedi yüz hektarlık verimli arazidir.
 
@@ -128,14 +159,14 @@
                                  cennetidir. 180'den fazla kuş türünün yanı sıra susamuru, tilki, sansar, sincap ve kirpi gibi birçok memelinin barınağıdır.
                             </p>
                             <img src="görsel/hevselbahçeleri.jpg" class="card-img-top img-thumbnail" alt="">
-                            <h4 class="card-title">5-On Gözlü Köprü</h4>
+                            <h4 class="card-title" id="ongözlüköprü" >5-On Gözlü Köprü</h4>
                             <p class="card-title">
                                 Şehir merkezine 3 km uzaklıktadır. Köprünün ilk yapım tarihi ile ilgili farklı türde görüşler vardır. Bu görüşlerden bazıları köprünün şimdiki 
                                 yerinde, antik dönemde de bir köprü olduğunu öne sürer. Birkaç defa kısmen veya tamamen yıkılıp yeniden inşa edildiği düşünülen köprünün, yapım 
                                 yılı olarak bilinen en yakın ve doğru tarih, köprü üzerinde yer alan kitabeden fark edilmektedir.[2] Kitabeye göre Mervaniler döneminde 1065 yılında yaptırılmıştır
                             </p>
                             <img src="görsel/ongözlü.jpg" class="card-img-top img-thumbnail" alt="">
-                            <h4 class="card-title">6-Hasan Paşa Hanı</h4>  
+                            <h4 class="card-title" id="hasanpaşahanı">6-Hasan Paşa Hanı</h4>  
                             <p class="card-title">
                                 Hasan Paşa Hanı, Diyarbakır'da Ulu Camii'nin doğu girişinin karşısında, Gazi Caddesi'nin üzerinde yer alan tarihî han. Hanın iki kitabesinden 
                                 öğrenildiğine göre, Diyarbakır'ın Osmanlılar tarafından alınmasından sonra üçüncü vali olan Sokollu Mehmet Paşa'nın oğlu Vezirzade Hasan Paşa 
@@ -155,6 +186,8 @@
                             </p>
                             <img src="görsel/Hasanpaşa-Hanı.png" class="card-img-top img-thumbnail" alt="">
 
+                            
+                           
 
 						</div>
 
