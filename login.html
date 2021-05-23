@@ -23,7 +23,7 @@
 
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="logo.png" alt="logo" class="rounded-circle"  style="width: 80px;">
+                <img src="görsel/logo.png" alt="logo" class="rounded-circle"  style="width: 80px;">
             </a>
             <a href="index.html" class="navbar-brand">
                 Anasayfa
@@ -46,14 +46,21 @@
                             Mirasımız
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="iletişim.html" class="nav-link active">
-                            İletişim
-                        </a>
-                    </li>
+                   
                     <li class="nav-item">
                         <a href="özgeçmiş.html" class="nav-link active">
                             Özgeçmiş
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="ilgialanlarım.html" class="nav-link active">
+                            İlgi Alanlarım
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="iletişim.html" class="nav-link active">
+                            İletişim
                         </a>
                     </li>
                   
@@ -85,9 +92,9 @@
 				<div class="col-md-8">
 
 					<div class="card mb-4">
-						<img src="görsel/sur.jpg" class="card-img-top img-thumbnail" alt="">
+						<img src="görsel/sed.jpg" class="card-img-top img-thumbnail" alt="">
 						<div class="card-body">
-							<form action="login.php" method="POST">
+							<form action="giris.php" method="POST" name="form" onsubmit="return dogrula();">
                                 <div class="form-group">
                                     <label>Kullanıcı Adı:</label>
                                     <input type="email" class="form-control" name="kullaniciadi">
@@ -98,8 +105,24 @@
                                     <label>Şifre:</label>
                                     <input type="password" class="form-control" name="sifre">
                                 </div>
-                                <button href="login.php"  type="submit" class="btn btn-success">Giriş Yap</button>
+                                <button  type="submit" class="btn btn-success">Giriş Yap</button>
+
+                                <script>
+                                    function dogrula() {
+                                        var x = document.forms["form"]["kullaniciadi"].value;
+                                        var y = document.forms["form"]["sifre"].value;
+                                        
+    
+                                        if (x == "" || y == "" ) {
+                                            alert("Lütfen Bilgileri Eksiksiz Doldurunuz");
+                                            return false;
+                                        }
+                                    }
+                                </script>
                             </form>
+
+                           
+
 						</div>
 
 						
@@ -121,3 +144,16 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

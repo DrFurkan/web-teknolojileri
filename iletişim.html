@@ -22,7 +22,7 @@
 
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="logo.png" alt="logo" class="rounded-circle" style="width: 80px;">
+                <img src="görsel/logo.png" alt="logo" class="rounded-circle" style="width: 80px;">
             </a>
             <a href="index.html" class="navbar-brand">
                 Anasayfa
@@ -45,14 +45,20 @@
                             Mirasımız
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="iletişim.html" class="nav-link active">
-                            İletişim
-                        </a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a href="özgeçmiş.html" class="nav-link active">
                             Özgeçmiş
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ilgialanlarım.html" class="nav-link active">
+                            İlgi Alanlarım
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="iletişim.html" class="nav-link active">
+                            İletişim
                         </a>
                     </li>
                     <li class="nav-item">
@@ -87,7 +93,7 @@
                         <img src="görsel/eğililçe.jpg" class="card-img-top img-thumbnail" alt="">
                         <div class="card-body">
 
-                            <form action="iletişim.php" method="POST" name="form" onsubmit="return validateForm();">
+                            <form action="iletisimbilgi.php" method="POST" name="form" onsubmit="return Form();">
                                 <div class="form-group">
 
 
@@ -107,8 +113,8 @@
 
 
                                     <label>cinsiyet</label> <br><br>
-                                    <input type="radio" name="cinsiyet"> erkek
-                                    <input type="radio" name="cinsiyet"> kadın
+                                    <input type="radio" checked="" name="cinsiyet" value="erkek"> erkek
+                                    <input type="radio"  name="cinsiyet" value="kadin"> kadın
                                 </div>
 
                                 <div class="form-group">
@@ -119,25 +125,34 @@
 
                                 <div class="form-group">
                                     Yaşınız:
-                                    <select>
+                                    <select name="yas" class="form-control"  >
                                         <option>Seçiniz</option>
-                                        <option>10-18</option>
-                                        <option>18-24</option>
-                                        <option>24+</option>
+                                        <option value="10-18">10-18</option>
+                                        <option value="18-24">18-24</option>
+                                        <option value="24+">24+</option>
 
                                     </select>
                                 </div>
 
+                                <div class="form-group">
+                                    <label>Mesajınız:</label>
+                                    
+                                    <textarea name="mesaj" class="form-control"></textarea>
+                                </div>
+
+
+
                                 <button type="submit" class="btn btn-success">Gönder</button>
                                 <button type="reset" class="btn btn-success">Bilgileri Temizle</button>
                                 <script>
-                                    function validateForm() {
+                                    function Form() {
                                         var x = document.forms["form"]["isim"].value;
                                         var y = document.forms["form"]["soyisim"].value;
                                         var z = document.forms["form"]["email"].value;
+                                        var t = document.forms["form"]["yas"].value;
+                                        var k = document.forms["form"]["mesaj"].value;
 
-
-                                        if (x == "" || y == "" || z == "") {
+                                        if (x == "" || y == "" || z == "" || t== "Seçiniz" || k=="") {
                                             alert("Lütfen Bilgileri Eksiksiz Doldurunuz");
                                             return false;
                                         }
